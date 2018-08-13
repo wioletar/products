@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{'/products/'+${product.name}+'/update'}" method="post">
+    <label>Podaj nazwe produktu</label>
+    <input type="text" name="name" th:value="${product.name}">
+    <label>Podaj opis produktu</label>
+    <input type="text" name="description" th:value="${product.description}">
+
+    <input type="submit" value="Edytuj">
+
+</form>
+</body>
+</html>
